@@ -39,7 +39,7 @@ if (isset($_POST["submitForm"])) {
             $slicedList = array_slice($nameList, 0, $divRes); //extract the array
             echo "Tim ke-" . $i + 1 . " ";
             for ($j = 0; $j < $divRes; $j++) { //iteration for each team's members
-                echo $slicedList[$j] . " ";
+                echo strtoupper($slicedList[$j]) . " ";
             }
             array_splice($nameList, 0, $divRes); //remove the extracted array
             echo "<br>";
@@ -59,7 +59,7 @@ if (isset($_POST["submitForm"])) {
         for ($i = 0; $i < $k; $i++) {
             echo "Tim ke-" . $i + 1 . " ";
             for ($j = 0; $j < $divRes; $j++) { //iteration for each team's members
-                echo $mainArray[$i][$j] . " ";
+                echo strtoupper($mainArray[$i][$j]) . " ";
             }
             echo "<br>";
         }
