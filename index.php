@@ -4,7 +4,7 @@
 <?php
 // Turn off error for indexing array's key
 // P.S. for myself: Don't use it again if u r unsure which error will pop next
-    error_reporting(0);
+error_reporting(0);
 ?>
 
 <head>
@@ -64,6 +64,8 @@ if (isset($_POST["submitForm"])) {
             echo "<br>";
         }
     }
+    date_default_timezone_set("Asia/Jakarta");
+    echo "Diacak pada " . date("d/m/Y h:i:s");
 }
 ?>
 
