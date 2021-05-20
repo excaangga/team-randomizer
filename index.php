@@ -65,7 +65,7 @@ if (isset($_POST["submitForm"])) {
         }
     }
     date_default_timezone_set("Asia/Jakarta");
-    echo "Diacak pada " . date("d/m/Y h:i:s");
+    echo "Diacak pada " . date("d/m/Y h:i:s") . " WIB";
 }
 ?>
 
